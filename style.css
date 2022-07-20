@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root{
+    --dm-serif-display-400: 'DM Serif Display', serif;
+    --karla-400-700: 'Karla', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+nav{
+    display: none;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+}
+html{
+    overflow-x: hidden;
+}
+.sect-1{
+    background-color: white;
+}
+.sect-1 .head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 1em auto;
+}
+.sect-2{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.sect-2 #pho{
+    width: 100%;
+}
+.sect-2 #des{
+    display: none;
+}
+.sect-3{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(270, 9%, 17%);
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    /* position: relative; */
+}
+.sect-3 .info{
+    width: 85%;
+    position: absolute;
+    bottom: -30%;
+}
+.sect-3 h1{
+    color: white;
+    font-size: 2.5em;
+}
+.sect-3 p{
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 0px 30px 0px;
+}
+.sect-3 button{
+    color: white;
+    background: transparent;
+    border: 1.5px solid white;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 10px 20px;
+}
+.sect-4{
+    height: 700px;
+    position: relative;
+}
+.sect-4 .info{
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 200px 200px 200px;
+    font-family: var(--karla-400-700);
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+
+}
+.sect-4 h1{
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.sect-4 h2{
+    font-size: 28px;
+}
+.sect-4 p{
+    font-size: 21px;
+}
+.sect-4 .con-info img{
+    width: 60px;
+}
+.sect-5{
+    margin: 5%;
+    background-color: hsl(270, 9%, 17%);
+    background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 25vh;
+    padding: 60px 20px;
+    position: relative;
+}
+.sect-5 h1{
+    color: white;
+    font-size: 38px;
+
+}
+.sect-5 button{
+    position: absolute;
+    font-size: 15px;
+    bottom: 20px;
+    right: 100px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.sect-6{
+    height: 200px;
+    position: relative;
+}
+.sect-6 .logo{
+    position: absolute;
+    top: 50px;
+    right: 140px;
+}
+.sect-6 #container{
+    position: absolute;
+    top: 100px;
+    right: 140px;
+}
+.sect-7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.sect-7 ul{
+    font-family: var(--karla-400-700);
+    font-weight: 400;
+}
+.sect-7 h4{
+    padding-bottom: 1em;
+}
+.sect-7 li{
+    list-style: none;
+    line-height: 1.5em;
+}
+.sect-7 li a{
+    text-decoration: none;
+}
+.sect-1{
+    position: relative;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(270, 9%, 17%);
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 1.2em;
+    padding: 1.5rem;
+    width: 90%;
+    height: 52vh;
+    display: none;
+}
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+}
+.nav-links ul{
+    font-family: var(--karla-400-700);
+    font-weight: 400;
+    position: absolute;
+    top: -20px;
+    left: 100px;
+}
+.nav-links ul li{
+    list-style: none;
+    line-height: 1.5em;
+    margin-top: 30px;
+}
+.nav-links li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: var(--karla-400-700);
+    text-decoration: none;
+}
+nav button{
+    color: white;
+    padding: 10px 60px;
+    background: transparent;
+    border-color: white;
+    position: absolute;
+    top: 160px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+#hamburger-icon{
+    cursor: pointer;
+}
+/* active state */
+.active #hamburger-icon{
+    content: url(./images/icon-close.svg);
+}
+.active nav{
+    display: flex;
+}
+@media screen and (min-width: 767px){
+   .sect-1{
+    position: relative;
+    width: 90%;
+    padding: 0.5em;
+   }
+   .sect-1 #hamburger-icon{
+    display: none;
+   }
+   .sect-1 nav{
+    display: flex;
+    top: 0;
+    background: none;
+    width: 90%;
+   }
+   .nav-links{
+    width: 90%;
+   }
+   .nav-links ul{
+    display: inherit;
+    gap: 2em;
+    position: absolute;
+    right: -50px;
+    margin-left: 10%;
+    top: -10px;
+   }
+   #header ul li a{
+    color: hsl(270, 9%, 17%);
+   }
+   #header button{
+    color: hsl(270, 9%, 17%);
+    border: 2px solid hsl(270, 9%, 17%);
+    position: absolute;
+    font-size: 10px;
+    font-weight: bolder;
+    padding: 5px 30px;
+    top: 20px;
+    right: 0;
+   }
+   .sect-2-3{
+    position: relative;
+   }
+   .sect-2{
+    position: inherit;
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    z-index: 7;
+   }
+   .sect-2 #pho{
+        display: none;
+   }
+   .sect-2 #des {
+        display: inherit;
+        float: right;
+        margin-right: 10%;
+        width: 33%;
+   }
+   .sect-3 .info{
+    position: inherit;
+    position: absolute;
+    min-height: 100vh;
+    margin: 5%;
+    top: 40px;
+    width: 40%;
+    left: 0;
+   }
+   .sect-3 .info h1{
+    font-size: 45px;
+    text-align: start;
+   }
+   .sect-3 .info p{
+    font-size: 20px;
+    text-align: start;
+   }
+   .sect-3 button{
+    position: absolute;
+    left: 0;
+   }
+   .sect-4{
+    position: relative;
+    margin-top: 20%;
+    height: 550px;
+   }
+   .sect-4 h1{
+    position: inherit;
+    font-size: 60px;
+   }
+   .sect-4 .info img{
+    position: absolute;
+    top: -120px;
+    width: 80px;
+    /* margin-left: -100px; */
+    /* left: 100px; */
+   }
+   /* .info #el1 img
+   .info #el2 img 
+   .info #el3 img{
+    margin-right: -80px;
+   } */
+   .sect-4 .info h2{
+    text-align: start;
+   }
+   .sect-4 .info p{
+    text-align: start;
+   }
+   .sect-4 .info{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 200px;
+    gap: 1em;
+    margin: 10%;
+   }
+   .sect-4 .info #el1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+   .sect-4 .info #el2{
+    grid-column-start: 2;
+    grid-column-end: 3;  
+   }
+   .sect-4 .info #el3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+   }
+   .sect-5{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   }
+   .sect-5 h1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 60px;
+    margin-right: 0;
+    text-align: start;
+   }
+   .sect-5 button{
+    grid-column-start: 2;
+    grid-column-end: 3;
+   }
+   .sect-6{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    margin: 0px 45px;
+   }
+   .sect-6 .logo{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: absolute;
+    left: 0;
+    top: 15px;
+   }
+   .sect-6 #container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    right: 0;
+    top: 30px;
+   }
+   .sect-7{
+    display: flex;
+    flex-direction: row;
+   }
+   .sect-7 ul{
+    flex: 1;
+   }
+}
+@media screen and (min-width: 400px) {
+    .sect-3{
+        position: relative;
+    }
+    .sect-3 .info{
+        position: absolute;
+        bottom: 20%;
+    }
+}
